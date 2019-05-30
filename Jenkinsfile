@@ -11,10 +11,10 @@ pipeline {
                echo 'Clone SCM'
             }
          }
-         stage('Build') {
+         stage('Deploy') {
             steps {
-               echo 'Build'
-               bat("mvn clean install -DskipTests")
+               echo 'Deploy'
+               bat("mvn clean deploy")
             }
          }
          stage('Sonar analysis') {
