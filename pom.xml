@@ -6,7 +6,7 @@
     <artifactId>testapp</artifactId>
     <version>0.0.1</version>
     <!-- uncomment for WAR deployment
-    <packaging>war</packaging>
+    <packaging>war</packaging> 
     -->
     <parent>
         <groupId>org.springframework.boot</groupId>
