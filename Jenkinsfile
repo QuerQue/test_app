@@ -17,17 +17,13 @@ pipeline {
                bat("mvn clean install -DskipTests")
             }
          }
-         stage('Unit Tests') {
+         stage('Sonar analysis') {
             steps {
-               echo bat("mvn test")
+               echo 'Sonar analysis'
+               bat("mvn sonar:sonar")
             }
          }
-         stage('Integration Tests') {
-            steps {
-               echo 'Integration Tests'
-            }
-         }
-         stage('Sending results') {
+         stage('Sending raport') {
             steps {
                echo 'Sending results'
             }
