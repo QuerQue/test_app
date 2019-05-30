@@ -14,7 +14,7 @@ pipeline {
          stage('Deploy') {
             steps {
                echo 'Deploy'
-               bat("mvn clean deploy")
+               bat("mvn clean deploy -DskipTests")
             }
          }
          stage('Sonar analysis') {
