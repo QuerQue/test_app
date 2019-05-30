@@ -35,7 +35,7 @@ public class Contact {
 
     @Column(name = "FULL_NAME")
     @NotEmpty(message = "{validation.not-empty.message}")
-    private String fullName;
+    private String fullName;  
 
     @Column(name = "JOB_TITLE")
     private String jobTitle;
