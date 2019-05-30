@@ -19,7 +19,7 @@ pipeline {
          }
          stage('Unit Tests') {
             steps {
-               echo 'mvn test'
+               echo bat("mvn test")
             }
          }
          stage('Integration Tests') {
