@@ -2,7 +2,7 @@ package com.pik.contact.service.unit;
 
 import com.pik.contact.domain.Contact;
 import com.pik.contact.repository.ContactRepository;
-import com.pik.contact.service.ContactService;
+import com.pik.contact.service.ContactService; 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
